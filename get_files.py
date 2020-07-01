@@ -1,6 +1,11 @@
 import os
 
 def show_files(path,cur_file_list):
+    """
+    获取递归列表文件夹下，所有文件    
+    """
+    
+    
     # 首先遍历当前目录所有文件及文件夹
     file_list = os.listdir(path)
     # 准备循环判断每个元素是否是文件夹还是文件，是文件的话，把名称传入list，是文件夹的话，递归
